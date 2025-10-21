@@ -19,6 +19,16 @@ kubectl completion + alias (k=kubectl)
 Memory-optimized kubelet/containerd
 Untainted control-plane node
 
+| Aspect             | Setup Script | Reset Script | Destroy Script |
+|-------------------|-------------|-------------|----------------|
+| Runtime            | 8-12 min    | 3-5 min     | 2-3 min        |
+| Kubernetes binaries| Installs    | Keeps       | Removes        |
+| containerd         | Installs    | Keeps       | Removes        |
+| Security tools     | Installs    | Keeps       | Removes        |
+| Cluster state      | Creates     | Resets      | Removes        |
+| Custom configs     | N/A         | Removes     | Removes        |
+| Network changes    | Applies     | Resets      | Reverts        |
+| Disk usage         | +2.5GB      | Same        | -2.5GB         |
+| Reboot needed      | No          | No          | Recommended    |
+| Frequency          | Once        | Weekly      | Once (end)     |
 
-Comparison Table
-AspectSetup ScriptReset ScriptDestroy ScriptRuntime8-12 min3-5 min2-3 minKubernetes binariesInstallsKeepsRemovescontainerdInstallsKeepsRemovesSecurity toolsInstallsKeepsRemovesCluster stateCreatesResetsRemovesCustom configsN/ARemovesRemovesNetwork changesAppliesResetsRevertsDisk usage+2.5GBSame-2.5GBReboot neededNoNoRecommendedFrequencyOnceWeeklyOnce (end)
