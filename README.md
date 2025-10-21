@@ -1,24 +1,23 @@
-Core Cluster:
+### Core Cluster:
+- containerd (v1.7.x latest stable)
+- Kubernetes 1.33.x (kubeadm, kubelet, kubectl)
+- Calico CNI (manifest-based, v3.28.x)
+- metrics-server
 
-containerd (v1.7.x latest stable)
-Kubernetes 1.33.x (kubeadm, kubelet, kubectl)
-Calico CNI (manifest-based, v3.28.x)
-metrics-server
+### Tools:
+- etcdctl (matching k8s etcd version)
+- crictl (matching containerd version)
+- kubesec (latest)
+- krew + kubectl plugins (who-can, access-matrix)
+- kube-bench (latest)
 
-CKS Security Tools:
+### Configuration:
+- kubectl completion + alias (k=kubectl)
+- Memory-optimized kubelet/containerd
+- Untainted control-plane node
 
-etcdctl (matching k8s etcd version)
-crictl (matching containerd version)
-kubesec (latest)
-krew + kubectl plugins (who-can, access-matrix)
-kube-bench (latest)
 
-Configuration:
-
-kubectl completion + alias (k=kubectl)
-Memory-optimized kubelet/containerd
-Untainted control-plane node
-
+### Comparison Table
 | Aspect             | Setup Script | Reset Script | Destroy Script |
 |-------------------|-------------|-------------|----------------|
 | Runtime            | 8-12 min    | 3-5 min     | 2-3 min        |
