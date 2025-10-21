@@ -1,19 +1,20 @@
 --- Kubernetes Repository ---
+This repo contains three bash script to create, reset and destroy a single node cluter with kubeadm, containerd and calico
 
-### Core Cluster:
+### Core Cluster
 - containerd (v1.7.x latest stable)
 - Kubernetes 1.33.x (kubeadm, kubelet, kubectl)
 - Calico CNI (manifest-based, v3.28.x)
 - metrics-server
 
-### Tools:
+### Tools
 - etcdctl (matching k8s etcd version)
 - crictl (matching containerd version)
 - kubesec (latest)
 - krew + kubectl plugins (who-can, access-matrix)
 - kube-bench (latest)
 
-### Configuration:
+### Configuration
 - kubectl completion + alias (k=kubectl)
 - Memory-optimized kubelet/containerd
 - Untainted control-plane node
