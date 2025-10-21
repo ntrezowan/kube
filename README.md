@@ -1,3 +1,5 @@
+--- Kubernetes Repository ---
+
 ### Core Cluster:
 - containerd (v1.7.x latest stable)
 - Kubernetes 1.33.x (kubeadm, kubelet, kubectl)
@@ -26,7 +28,6 @@
 | Cluster state      | Creates       | Resets       | Removes        |
 | Custom configs     | N/A           | Removes      | Removes        |
 | Network changes    | Applies       | Resets       | Reverts        |
-| Disk usage         | +2.5GB        | Same         | -2.5GB         |
+| Disk usage         | +2.5GB        | +2.5GB       | -2.5GB         |
 | Reboot needed      | No            | No           | Recommended    |
-| Frequency          | Once          | Weekly       | Once (end)     |
 
