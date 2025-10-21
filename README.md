@@ -18,15 +18,15 @@
 
 
 ### Comparison Table
-| Aspect             | Setup Script | Reset Script | Destroy Script |
-|--------------------|--------------|--------------|----------------|
-| Kubernetes binaries| Installs     | Keeps        | Removes        |
-| containerd         | Installs     | Keeps        | Removes        |
-| Security tools     | Installs     | Keeps        | Removes        |
-| Cluster state      | Creates      | Resets       | Removes        |
-| Custom configs     | N/A          | Removes      | Removes        |
-| Network changes    | Applies      | Resets       | Reverts        |
-| Disk usage         | +2.5GB       | Same         | -2.5GB         |
-| Reboot needed      | No           | No           | Recommended    |
-| Frequency          | Once         | Weekly       | Once (end)     |
+|                    | Create script | Reset script | Destroy script |
+|--------------------|---------------|--------------|----------------|
+| Kubernetes binaries| Installs      | Keeps        | Removes        |
+| containerd         | Installs      | Keeps        | Removes        |
+| Security tools     | Installs      | Keeps        | Removes        |
+| Cluster state      | Creates       | Resets       | Removes        |
+| Custom configs     | N/A           | Removes      | Removes        |
+| Network changes    | Applies       | Resets       | Reverts        |
+| Disk usage         | +2.5GB        | Same         | -2.5GB         |
+| Reboot needed      | No            | No           | Recommended    |
+| Frequency          | Once          | Weekly       | Once (end)     |
 
