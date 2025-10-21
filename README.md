@@ -19,15 +19,14 @@
 
 ### Comparison Table
 | Aspect             | Setup Script | Reset Script | Destroy Script |
-|-------------------|-------------|-------------|----------------|
-| Runtime            | 8-12 min    | 3-5 min     | 2-3 min        |
-| Kubernetes binaries| Installs    | Keeps       | Removes        |
-| containerd         | Installs    | Keeps       | Removes        |
-| Security tools     | Installs    | Keeps       | Removes        |
-| Cluster state      | Creates     | Resets      | Removes        |
-| Custom configs     | N/A         | Removes     | Removes        |
-| Network changes    | Applies     | Resets      | Reverts        |
-| Disk usage         | +2.5GB      | Same        | -2.5GB         |
-| Reboot needed      | No          | No          | Recommended    |
-| Frequency          | Once        | Weekly      | Once (end)     |
+|--------------------|--------------|--------------|----------------|
+| Kubernetes binaries| Installs     | Keeps        | Removes        |
+| containerd         | Installs     | Keeps        | Removes        |
+| Security tools     | Installs     | Keeps        | Removes        |
+| Cluster state      | Creates      | Resets       | Removes        |
+| Custom configs     | N/A          | Removes      | Removes        |
+| Network changes    | Applies      | Resets       | Reverts        |
+| Disk usage         | +2.5GB       | Same         | -2.5GB         |
+| Reboot needed      | No           | No           | Recommended    |
+| Frequency          | Once         | Weekly       | Once (end)     |
 
